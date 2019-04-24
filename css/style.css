@@ -1,0 +1,268 @@
+@font-face {
+    font-family: 'caviar_dreamsbold';
+    src: url('../font/Caviar_Dreams_Bold-webfont.eot');
+    src: url('../font/Caviar_Dreams_Bold-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/Caviar_Dreams_Bold-webfont.woff') format('woff'),
+    url('../font/Caviar_Dreams_Bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../font/CaviarDreams-webfont.eot');
+    src: url('../font/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+    url('../font/CaviarDreams-webfont.woff') format('woff'),
+    url('../font/CaviarDreams-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    color: #f0f8ff;
+    text-decoration: none;
+    outline: 0;
+    display: inline-block;
+}
+
+body {
+    margin: 0;
+    min-width: 600px;
+    width: 100%;
+}
+
+canvas {
+    width: 100%;
+    height: 100%;
+}
+
+section {
+    color: white;
+    font-family: caviar_dreamsbold;
+}
+
+section h1 {
+    font-size: 3em;
+}
+
+section p {
+    width: 100%;
+    font-family: caviar_dreamsregular;
+}
+
+li {
+    list-style: none;
+    font-family: caviar_dreamsregular;
+    font-weight: 100;
+}
+
+.title {
+    display: inline;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space:nowrap;
+    width: auto;
+    position: relative;
+    top: 20vh;
+    left: 75%;
+    margin: auto;
+    margin-top: -1.5em;
+    margin-left: -176px;
+}
+
+.sphere {
+    margin-left: -80px;
+}
+
+.cube {
+    margin-left: -64px;
+}
+
+.plane {
+    margin-left: -64px;
+}
+
+.end {
+    margin-left: -43px;
+}
+
+
+.pageforintro {
+    top: 35vh;
+    left: 25%;
+    width: 75%;
+    position: relative;
+    margin-top: -0.5em;
+    margin-left: -176px;
+    margin-right: 0;
+    display: inline-block;
+}
+
+#Title {
+    width: 100%;
+    height: 100vh;
+}
+
+#Sphere {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#Cube {
+    width: 100%;
+    height: 100vh;
+}
+
+#Plane {
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#End {
+    width: 100%;
+    height: 100vh;
+}
+
+#End a {
+    float: left;
+}
+
+#nextPage {
+    width: 2em;
+    height: 2em;
+    border-radius: 1.3em;
+    border: 1px solid #f0f8ff;
+    transition-duration: 0.3s;
+    mix-blend-mode: screen;
+}
+
+#nextPage:hover {
+    background-color: white;
+}
+
+#returnMain {
+    border: 1px solid #f0f8ff;
+    transition-duration: 0.3s;
+    mix-blend-mode: screen;
+}
+
+#returnMain:hover {
+    background-color: white;
+}
+
+.returnText {
+    width: auto;
+    font-size: 0.8em;
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+
+#returnMain:hover .returnText {
+    color: black;
+    font-weight: 100;
+}
+
+#gotoCode:hover .returnText {
+    color: black;
+    font-weight: 100;
+}
+
+#gotoCode{
+    border: 1px solid #f0f8ff;
+    transition-duration: 0.3s;
+    mix-blend-mode: screen;
+}
+
+#gotoCode:hover {
+    background-color: white;
+}
+
+.downSharp {
+    top: 50%;
+    left: 50%;
+    margin-top: -7px;
+    margin-left: -6px;
+    position: relative;
+    width: 10px;
+    height: 10px;
+    transform: rotate(-45deg);
+    border-bottom: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#nextPage:hover .downSharp {
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+}
+
+#ToCube,#ToSphere,#ToEnd {
+    margin-top: 10vh;
+}
+
+#ToPlane {
+    margin-top: 7vh;
+}
+
+#ToReturn,#GotoOther {
+    margin-top: 12vh;
+}
+
+#GotoOther {
+    margin-left: 1em;
+}
+
+.nav-li {
+    width: 13px;
+    height: 13px;
+    margin-top: 5vh;
+    transform: rotate(45deg);
+    border: 1px solid white;
+    transition-duration: 0.3s;
+}
+
+.nav-li a {
+    width: 70px;
+    top: 22px;
+    left: -35px;
+    margin-left: -35px;
+    padding-right: 30px;
+    padding-bottom: 4px;
+    transform: rotate(-45deg);
+    position: relative;
+    text-align: right;
+    color: rgba(255, 255, 255, 0);
+    /*opacity: 0;*/
+    transition-duration: 0.3s;
+}
+
+.nav-li:hover {
+    background-color: white;
+}
+
+.nav-li:hover a {
+    color: rgba(255, 255, 255, 1);
+    /*opacity: 1;*/
+}
+
+#nav {
+    position: fixed;
+    width: 80px;
+    height: auto;
+    margin-top: 35vh;
+    margin-left: -40px;
+    top: 0;
+    left: 95%;
+    mix-blend-mode: screen;
+}
+
+.highLight {
+    background-color: white;
+}
+
+.highLight a {
+    color: rgba(255, 255, 255, 1);
+}
